@@ -5,8 +5,8 @@ import Tile from "./Tile";
 export default function LoginPane(){
     const [isSaas,setIsSaas]=useState(true);
     return(
-        <div className="flex justify-center  w-full h-full">
-            <div className="mt-[10%] w-[90%] border-gray-100 border-2 h-[70%] rounded-lg bg-white overflow-hidden">
+        <div className="relative flex  justify-center  w-full h-full">
+            <div className="relative mt-[10%] w-[90%] border-gray-100 border-2 h-[70%] rounded-lg bg-white">
                 <div className="w-full h-[40%] border-gray-200 border-b-2 flex flex-col overflow-hidden">
                  <div className="flex w-full h-[30%] justify-center items-center">
                     <img className='mt-4'src={logo}></img>
@@ -28,20 +28,18 @@ export default function LoginPane(){
                         }}>
                         <p className={`${!isSaas?"text-gray-50":""}`}>Self Hosted</p>
                         </div>
-
                         </div>
                     </div>
-
                 </div>
-
+               
                 </div>
+               
                 <div className="w-full h-[60%] items-center justify-center pt-4 ">{
-                 <Tile isSaas={isSaas}></Tile>}
-                    
+                 <Tile isSaas={isSaas}></Tile>}  
                     </div>
-
+                    <p className='z-1000 mt-2 text-xs text-black'>By signing up you agree to the <span className='font-semibold'>Privacy Policy.</span>
+                </p>
             </div>
-
         </div>
     )
 

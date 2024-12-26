@@ -5,7 +5,7 @@ import LoginPane from '../components/LoginPane.tsx';
 export default function LoginScreen(){
     return(
         <div className="flex flex-row w-full h-full bg-white">
-            <div className=" relative flex-1 ">
+            <div className="hidden sm:block relative flex-1 ">
             <Card >
             </Card>
                 <div className="absolute bottom-0 left-0 h-1/3 w-2/5">
