@@ -3,6 +3,7 @@ import { RepositoryData } from "../data/tileData";
 import { ContactData } from "../data/tileData";
 import { useState } from "react";
 export default function SideBar(){
+    
     const [select,setSelect]= useState(0);
     return(
         <div className="h-full w-[20%] justify-center items-center ">
